@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+body {
+  color: white;
+  background-color: hsl(0, 0%, 81%);
+
+  max-width: 1440px;
+  margin: auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1.7;
+  font-size: 13px;
+}
+
+span {
+  opacity: 70%;
+}
+
+p {
+  opacity: 70%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+img {
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.text1 {
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position: 80% 1%;
+  background-color: hsl(263, 55%, 52%);
+  grid-area: text1;
+}
+
+.text2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: text2;
+}
+
+.text3 {
+  background-color: white;
+  grid-area: text3;
+  color: black;
+}
+.text4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: text4;
+}
+.text5 {
+  background-color: white;
+  grid-area: text5;
+  color: black;
+}
+
+main {
+  margin: 50px;
+  max-width: 1440px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "text1 text1 text2 text5"
+    "text3 text4 text4 text5";
+}
+
+article {
+  padding: 40px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* 
+    MOBILE
+ */
+
+@media only screen and (max-width: 900px) {
+  main {
+    display: block;
+    margin: 20px;
+  }
+  article {
+    margin-bottom: 20px;
+  }
+}
